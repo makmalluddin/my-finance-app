@@ -76,7 +76,7 @@ export default function DashboardPage() {
             height={80}
             className="opacity-80"
           />
-          <h1 className="text-3xl font-bold tracking-tight">Catatan Keuanganmu</h1>
+          <h1 className="text-4xl font-bold tracking-tight">Catatan Keuanganmu</h1>
         </div>
       </div>
 
@@ -107,7 +107,7 @@ export default function DashboardPage() {
               </Link>
 
               <Link
-                href="/transactions"
+                href="dashboard/total-transactions"
                 className="px-5 py-2 border border-neutral-700 rounded-lg text-gray-300 hover:bg-neutral-800"
               >
                 Lihat Detail
@@ -150,7 +150,7 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold">Transaksi Terbaru</h2>
 
           <Link
-            href="/transactions/filter"
+            href="/dashboard/filter-transactions"
             className="text-emerald-400 hover:text-emerald-300 flex items-center gap-2 hover:bg-emerald-500/10 px-3 py-1 rounded"
           >
             Lihat Semua <ArrowRight className="w-4 h-4" />
@@ -192,16 +192,6 @@ export default function DashboardPage() {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Export Button */}
-      <div className="fixed bottom-6 right-6">
-        <a
-          href="/api/export/excel"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded shadow-lg"
-        >
-          ⬇️ Export Excel
-        </a>
       </div>
     </div>
   );

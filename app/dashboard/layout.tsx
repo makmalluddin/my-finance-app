@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { Home, Receipt, Plus, Filter, LogOut, DollarSign } from "lucide-react";
+import { Home, Plus, Filter, LogOut, DollarSign } from "lucide-react";
 import React from "react";
 import logoNoBG from "@/app/component/logoWhitenb.png"
 
