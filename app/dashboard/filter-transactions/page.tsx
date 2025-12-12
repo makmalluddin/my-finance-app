@@ -417,7 +417,7 @@ export default function FilterTransactionsPage() {
                   <SelectValue placeholder="Jenis Transaksi" />
                 </SelectTrigger>
 
-                <SelectContent>
+                <SelectContent className="text-white border-gray-700 bg-gradient-to-br from-gray-900 from-70% to-gray-800 border-gray-700">
                   {transactionTypes.map((t) => (
                     <SelectItem key={t.value} value={t.value}>
                       {t.label}
@@ -439,7 +439,7 @@ export default function FilterTransactionsPage() {
             </div>
           )}
 
-          <DialogFooter>
+          <DialogFooter className="text-white">
             <Button variant="outline" onClick={() => setEditData(null)}>
               Cancel
             </Button>
